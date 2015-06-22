@@ -1,0 +1,46 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>WheelJs Test Suite</title>
+    <link rel="stylesheet" href="../src/wheel.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../src/wheeljs.js"></script>
+  </head>
+  <body>
+    <div class="wheel pOne">
+      <div class="pageUl">
+        <div class="pageLi">
+          <!-- pTow -->
+          <div class="wheel pTow">
+            <div class="pageUl">
+              <div class="pageLi"><img src="http://yootheme.com/demo/themes/wordpress/2015/venice/wp-content/uploads/home_fullscreen_image2.jpg" alt=""></div>
+              <div class="pageLi"><img src="http://yootheme.com/demo/themes/wordpress/2015/venice/wp-content/uploads/home_fullscreen_image3.jpg" alt=""></div>
+            </div>
+          </div>
+          <!-- END pTow -->
+        </div>
+        <div class="pageLi"><img src="http://darkroom.imaginem.co/wp-content/uploads/sites/3/2011/09/photodune-5960703-bride-m.jpg" alt=""></div>
+        <div class="pageLi"><img src="http://darkroom.imaginem.co/wp-content/uploads/sites/3/2011/09/dancer.jpg" alt=""></div>
+        <div class="pageLi">
+          <!-- pThree -->
+          <div class="wheel pThree">
+            <div class="pageUl">
+              <div class="pageLi"><img src="http://tattoo.wp4life.com/images/slide1.jpg" alt=""></div>
+              <div class="pageLi"><img src="http://tattoo.wp4life.com/images/slide2.jpg" alt=""></div>
+              <div class="pageLi"><img src="https://theme-dutch.com/presents/joop/wp-content/uploads/2013/10/red-3.jpg" alt=""></div>
+            </div>
+          </div>
+          <!-- END pThree -->
+        </div>
+      </div>
+    </div>
+    <script>
+    jQuery(function($){
+      var pOne=$('.pOne').wheel();
+      var pTow=$('.pTow').wheel({isAbsolute:false});
+      var pThree=$('.pThree').wheel({isLateral:false});
+    });
+    </script>
+  </body>
+</html>
